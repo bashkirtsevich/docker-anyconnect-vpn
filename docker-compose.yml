@@ -3,7 +3,7 @@ version: '3'
 services:
   vpn:
     container_name: vpn
-    image: jetbrainsinfra/docker-anyconnect-vpn
+    image: anyconnect-vpn
     environment:
       - ANYCONNECT_SERVER=${ANYCONNECT_SERVER}
       - ANYCONNECT_USER=${ANYCONNECT_USER}
