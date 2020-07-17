@@ -20,7 +20,7 @@ services:
     container_name: packer
     image: alpine
     tty: true
-    entrypoint: /bin/sleep 10
+    entrypoint: /bin/sleep infinity
     depends_on:
       - vpn
     network_mode: "service:vpn"

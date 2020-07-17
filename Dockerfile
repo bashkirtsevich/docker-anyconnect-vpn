@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine
 RUN apk add openconnect --no-cache  --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 ADD entrypoint.sh /entrypoint.sh
 HEALTHCHECK  --interval=10s --timeout=10s --start-period=10s \
